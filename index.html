@@ -1,0 +1,68 @@
+<html lang="en">
+
+<head>
+    <title>Idleon Cog Exporter</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+<header>
+    Idleon Cog Exporter
+</header>
+
+<div id="loader">
+    <img src="assets/puff.svg" alt="">
+    <div class="loader-text">Waiting for Legends Of Idleon...</div>
+</div>
+
+<div id="content">
+    <div class="json">
+        <span>Cogs Data </span>
+        <a id="cogsCopyLink">
+            <img class="copy" src="assets/copy.svg" alt="copy">
+        </a>
+        <a id="cogsDownloadLink">
+            <img class="download" src="assets/download.svg" alt="download">
+        </a>
+    </div>
+
+    <div class="json">
+        <span>Empties Data</span>
+        <a id="emptiesCopyLink">
+            <img class="copy" src="assets/copy.svg" alt="copy">
+        </a>
+        <a id="emptiesDownloadLink">
+            <img class="download" src="assets/download.svg" alt="download">
+        </a>
+    </div>
+
+    <!--
+        <div class="json">
+            <span>Debug</span>
+            <a id="debugExportCopyLink">
+                <img class="copy" src="assets/copy.svg" alt="copy">
+            </a>
+        </div>
+    -->
+    <div class="sub-header"><a href="https://github.com/automorphis/Cogstruction#cogstruction" target="_blank" style="color:white;font-size:50%">>For use with automorphis' Cogstruction<</a></div>
+</div>
+
+<input type="text" id="copy-from" hidden>
+<div id="tooltip">Copied!</div>
+
+<script src="js/template.js" type="text/javascript"></script>
+<script src="js/maps/classTalentMap.js" type="text/javascript"></script>
+<script src="js/maps/itemMap.js" type="text/javascript"></script>
+<script src="js/maps/mobMap.js" type="text/javascript"></script>
+<script src="js/maps/cardLevelMap.js" type="text/javascript"></script>
+<script src="js/maps/cardEquipMap.js" type="text/javascript"></script>
+<script src="js/maps/talentMap.js" type="text/javascript"></script>
+<script src="js/maps/maps.js" type="text/javascript"></script>
+<script src="js/calculatorParse.js" type="text/javascript"></script>
+<script src="js/companionParse.js" type="text/javascript"></script>
+<script src="js/guildParse.js" type="text/javascript"></script>
+<script src="js/parse.js" type="text/javascript"></script>
+<script src="js/popup.js" type="text/javascript"></script>
+</body>
+
+</html>

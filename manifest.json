@@ -1,0 +1,31 @@
+{
+  "manifest_version": 2,
+  "name": "Idleon Cogs Exporter",
+  "version": "0.1",
+  "author": "AfkKun",
+
+  "browser_action": {
+    "default_popup": "index.html"
+  },
+
+  "permissions": [
+    "activeTab",
+    "storage",
+    "tabs"
+  ],
+
+  "description": "CSV-Export Tool for use with automorphis' Cogstruction built on Corbeno's API v0.2",
+
+  "icons": {
+      "96": "assets/cog_icon.png"
+  },
+
+  "content_scripts": [{
+    "matches": ["*://*.legendsofidleon.com/*"],
+    "js": ["js/inject.js"],
+    "run_at": "document_start"
+  }],
+
+  "web_accessible_resources": ["js/injected.js"]
+
+}
