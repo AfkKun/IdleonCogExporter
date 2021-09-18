@@ -14,7 +14,7 @@ It's built on Corbeno's Idleon API v0.2.
 
 # How to use
 
-Firstly you need to install the Cogstruction algorithm and the Python environment: https://github.com/automorphis/Cogstruction#cogstruction
+First you need to install the Cogstruction algorithm and the Python environment: https://github.com/automorphis/Cogstruction#cogstruction
 
 When the extension is installed you just need to log into the Legend of Idleon website. Open the extension once you are logged in and are in the character selection or already on a character.
 
