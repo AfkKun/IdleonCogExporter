@@ -119,8 +119,10 @@ function AddCog(cog)
         cogsDataExport+=cog.data.g/100.0;
     cogsDataExport+=",";      
 
-    //flaggy_speed  TODO!! Not yet obtained, unknown Key
-    cogsDataExport+=",";  
+    //flaggy_speed 
+    if(cog.data.hasOwnProperty("k"))
+        cogsDataExport+=cog.data.k;
+    cogsDataExport+=",";
     
     //exp_rate_boost
     if(cog.data.hasOwnProperty("f"))
