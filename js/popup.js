@@ -52,7 +52,6 @@ function updateAllButtons() {
             const buttons = [
                 { id: 'cogsCopyLink', data: cogCSVExports[0] },
                 { id: 'emptiesCopyLink', data: cogCSVExports[1] },
-                //{ id: 'debugExportCopyLink', data: cogCSVExports[3] },
             ];
 
             // only show buttons with non-empty data
@@ -69,13 +68,14 @@ function updateAllButtons() {
                 }
                 button.addEventListener("click", function (e) {
                     showTooltip(e, 'Copied!');
-                    copyTextToClipboard(buttonElement.data);
+                    copyTextToClipboard(buttonElement.data);//
                 });
             });
 
             // TODO: RE-WRITE THIS FUNCTION
             allowDownloadButton("cogsDownloadLink", cogCSVExports[0], "cog_datas.csv");
             allowDownloadButton("emptiesDownloadLink", cogCSVExports[1], "empties_datas.csv");
+			allowDownloadButton("debugExportDownloadLink", cogCSVExports[3], "debug.json");
         }
     });
 }

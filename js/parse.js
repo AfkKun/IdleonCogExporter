@@ -124,7 +124,7 @@ function AddCog(cog)
     
     //exp_rate_boost
     if(cog.data.hasOwnProperty("f"))
-        cogsDataExport+=cog.data.f/100.0;                
+        cogsDataExport+=cog.data.f;                
     cogsDataExport+=",";  
 
     cogsDataExport+="\n";
@@ -135,6 +135,10 @@ function translateCogNames(cogname){
     //Translating the JSON names to the ones used by Cogstruction
     switch(cogname)
     {
+        case 'around':
+            return "Yang_Cog";
+        case 'everything':
+            return "Omni_Cog"
         case 'diagonal':
             return "X_Cog";
         case 'adjacent':
@@ -148,13 +152,11 @@ function translateCogNames(cogname){
         case 'right':
             return "Right_Cog";
         case 'column':
-            return "Col_Cog";       //TODO obtain Row/Column and Omni Cog these are just guessed
+            return "Col_Cog";       //TODO obtain Row/Column Cog these are just guessed
         case 'row':
             return "Row_Cog";
-        case 'omni':
-            return "Omni_Cog";
         default:
-                return "Cog";
+            return "Cog";
     }
 }
 
