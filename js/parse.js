@@ -106,7 +106,7 @@ function AddCog(cog)
 
     //exp_rate
     if(cog.data.hasOwnProperty("b"))
-        cogsDataExport+=cog.data.b;
+        cogsDataExport+=cog.data.b/100.0;
     cogsDataExport+=",";
 
     //build_rate_boost
