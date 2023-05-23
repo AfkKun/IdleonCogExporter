@@ -1,4 +1,4 @@
-#**This repository is not maintained anymore. To use it again someone needs to update the used IdleonAPI version of this project**
+# This repository is not maintained anymore. To use it again someone needs to update the used IdleonAPI version of this project
 
 
 
