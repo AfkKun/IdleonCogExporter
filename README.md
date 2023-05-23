@@ -1,3 +1,8 @@
+#**This repository is not maintained anymore. To use it again someone needs to update the used IdleonAPI version of this project**
+
+
+
+
 # Idleon Cog Exporter
 
 This exporter exports all cogs and players from the board and storage and writes them in the csv format used by automorphis' "Cogstruction" algorithm.
